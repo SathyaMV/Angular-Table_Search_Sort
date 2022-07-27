@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Britto",
+        "dob": "1999",
+        "gender": "Male",
+        "qualification": "Engineering",
+        "email": "user1@test.com",
+        "skills": "Frontend"
+    },
+    {
+        "id": 2,
+        "name": "Joyce",
+        "dob": "1998",
+        "gender": "Female",
+        "qualification": "Engineering",
+        "email": "user2@test.com",
+        "skills": "Backend"
+    },
+    {
+        "id": 3,
+        "name": "Alex",
+        "dob": "1997",
+        "gender": "Male",
+        "qualification": "Arts and Science",
+        "email": "user3@test.com",
+        "skills": "Testing"
+    },
+    {
+        "id": 4,
+        "name": "John",
+        "dob": "1996",
+        "gender": "Male",
+        "qualification": "Arts and Science",
+        "email": "user4@test.com",
+        "skills": "Networking"
+    },
+    {
+        "id": 5,
+        "name": "Caroline",
+        "dob": "1995",
+        "gender": "Female",
+        "qualification": "Engineering",
+        "email": "user5@test.com",
+        "skills": "Networking"
+    }
+]

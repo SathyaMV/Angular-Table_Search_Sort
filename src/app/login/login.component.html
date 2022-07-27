@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row align-items-center justify-content-center vh-100">
+    <div class="card w-50">
+      <h2 class="text-center mt-3">Enter User Credentials.!</h2>
+      <form class="p-3" [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input id="email" class="form-control" formControlName="email" name="email" type="email"
+            placeholder="Email" />
+          <div *ngIf="mail?.invalid && (mail?.dirty || mail?.touched)" class="text-danger">
+            <span *ngIf="myForm.hasError('required', 'email')">
+              * Email is required.
+            </span>
+            <span *ngIf="
+                myForm.hasError('email', 'email') &&
+                myForm.hasError('pattern', 'email')
+              ">
+              * Enter a valid email.
+            </span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password:</label>
+          <input id="password" class="form-control" formControlName="password" name="password" type="password"
+            placeholder="Password" />
+          <div *ngIf="pwd?.invalid && (pwd?.dirty || pwd?.touched)" class="text-danger">
+            <span *ngIf="myForm.hasError('required', 'password')">
+              * Please enter password.
+            </span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-primary btn-block m-1 w-100" type="submit" [disabled]="!myForm.valid">
+            Login
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
